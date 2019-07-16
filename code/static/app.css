@@ -1,0 +1,25 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: #dcdcdc;
+}
+
+#page-content {
+    flex: 1 0 auto;
+}
+
+#sticky-footer {
+    flex-shrink: none;
+}
+
+.card {
+    background-color: #e9ecef;
+    border-radius: .3rem;
+}
+
+#about_page .card-text {
+    font-size: 20px;
+}
