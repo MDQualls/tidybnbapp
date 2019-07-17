@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fb4253f-12bc-4396-b59d-576e67b06ba6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/resources/login.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/resources/register.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/templates/includes/_navbar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/tidyapp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tidyapp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webResources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/resources/home.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/resources/home.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/templates/_layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/code/templates/_layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/util/validators.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +24,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/templates/includes/_navbar.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="396">
@@ -47,11 +36,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/resources/register.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="154">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/code/util/validators.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="484">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
             </state>
           </provider>
         </entry>
@@ -98,6 +96,7 @@
         <option value="$PROJECT_DIR$/code/templates/register.html" />
         <option value="$PROJECT_DIR$/code/app.py" />
         <option value="$PROJECT_DIR$/code/templates/includes/_navbar.html" />
+        <option value="$PROJECT_DIR$/code/util/validators.py" />
       </list>
     </option>
   </component>
@@ -132,20 +131,7 @@
               <item name="tidyapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="tidyapp" type="462c0819:PsiDirectoryNode" />
               <item name="code" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tidyapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tidyapp" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tidyapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tidyapp" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="includes" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -221,12 +207,12 @@
       <option name="presentableId" value="Default" />
       <updated>1563299299983</updated>
       <workItem from="1563299319269" duration="5211000" />
-      <workItem from="1563357969278" duration="1584000" />
+      <workItem from="1563357969278" duration="2101000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6795000" />
+    <option name="totallyTimeSpent" value="7312000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -317,16 +303,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/resources/register.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -341,6 +317,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/resources/register.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/util/validators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
