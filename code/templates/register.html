@@ -1,0 +1,53 @@
+{% extends '_layout.html' %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col">
+        <h2 class="mt-1 display-4">
+            {{ title }}
+          </h2>
+          <hr>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <div class="card">
+            <div class="card-body">
+                <p class="lead">
+                    <strong>
+                        Registering will allow you to create an account and utilize our services.
+                    </strong>
+                </p>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control" name="username" id="username" placeholder="Enter your user name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email_address">Email address</label>
+                        <input type="email" class="form-control" name="email_address" id="email_address" placeholder="Enter your email address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" name="password" id="password" placeholder="Enter your user password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm_password">Confirm Password</label>
+                        <input type="password" class="form-control" name="confirm_password" id="confirm_password" placeholder="Confirm your password" required>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" value="1" id="newsletter" name="newsletter">
+                        <label class="form-check-label" for="newsletter">
+                            <h5>Send me alerts when site content is updated.</h5>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
