@@ -37,12 +37,7 @@
                         <label for="confirm_password">Confirm Password</label>
                         <input type="password" class="form-control" name="confirm_password" id="confirm_password" placeholder="Confirm your password" required>
                     </div>
-                    <div class="form-check mb-3">
-                        <input class="form-check-input" type="checkbox" value="1" id="newsletter" name="newsletter">
-                        <label class="form-check-label" for="newsletter">
-                            <h5>Send me alerts when site content is updated.</h5>
-                        </label>
-                    </div>
+                    {% include 'includes/_csrf.html'%}
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>

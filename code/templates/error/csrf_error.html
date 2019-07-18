@@ -1,0 +1,20 @@
+{% extends '_layout.html' %}
+
+{% block content %}
+    <h1 class="display-4">CSRF Error</h1>    
+
+    <div id="csrf_error_template" class="card text-white bg-danger mt-2">
+        <div class="card-body">
+            <div class="row">
+                <div class="col">                   
+                    <div class="col">
+                        <p class="card-text">
+                            {{ reason }}
+                        </p>
+                    </div>                
+                </div>
+            </div>        
+        </div>
+    </div>
+
+{% endblock content %}

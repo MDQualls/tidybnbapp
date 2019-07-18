@@ -28,6 +28,7 @@
                         <label for="password">Password</label>
                         <input type="password" class="form-control" name="password" id="password" placeholder="Enter your user password" required>
                     </div>
+                    {% include 'includes/_csrf.html'%}
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
