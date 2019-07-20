@@ -9,6 +9,7 @@ from resources.login import Login
 from resources.register import Register
 from resources.account import Account
 from resources.logout import Logout
+from resources.about import About
 
 app = Flask(__name__)
 #app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://tidyuser:\G''ymP='WMTp4VR>+2+@localhost/tidyappdb1"
@@ -42,6 +43,7 @@ api.add_resource(Login, "/login")
 api.add_resource(Register, "/register")
 api.add_resource(Account, "/account")
 api.add_resource(Logout, "/logout")
+api.add_resource(About, "/About")
 
 if __name__ == "__main__":
     from db import db
