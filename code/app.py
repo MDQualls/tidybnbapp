@@ -10,10 +10,15 @@ from resources.register import Register
 from resources.account import Account
 from resources.logout import Logout
 from resources.about import About
+from resources.contact import Contact
+from resources.bnblistings import BnbListings
+from resources.maidlistings import MaidListings
+from resources.disclaimer import Disclaimer
 
 app = Flask(__name__)
 #app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://tidyuser:\G''ymP='WMTp4VR>+2+@localhost/tidyappdb1"
 app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://root:x6xzyi@localhost/tidyappdb1"
+app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.secret_key = secrets.token_urlsafe(24)
 
 handle_exceptions = app.handle_exception
@@ -43,7 +48,11 @@ api.add_resource(Login, "/login")
 api.add_resource(Register, "/register")
 api.add_resource(Account, "/account")
 api.add_resource(Logout, "/logout")
-api.add_resource(About, "/About")
+api.add_resource(About, "/about")
+api.add_resource(Contact, "/contact")
+api.add_resource(BnbListings, "/bnblistings")
+api.add_resource(MaidListings, "/maidlistings")
+api.add_resource(Disclaimer, "/disclaimer")
 
 if __name__ == "__main__":
     from db import db
