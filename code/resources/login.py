@@ -56,7 +56,7 @@ class Login(Resource):
             )
 
         begin_session(
-            result["user"].username, result["user"].email_address, True, False
+            result["user"].username, result["user"].email_address, True, result["user"].admin_user
         )
 
         flash(result["message"], "success")

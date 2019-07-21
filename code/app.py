@@ -14,6 +14,7 @@ from resources.contact import Contact
 from resources.bnblistings import BnbListings
 from resources.maidlistings import MaidListings
 from resources.disclaimer import Disclaimer
+from resources.bnbdashboard import BnbDashboard
 
 app = Flask(__name__)
 #app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://tidyuser:\G''ymP='WMTp4VR>+2+@localhost/tidyappdb1"
@@ -53,6 +54,7 @@ api.add_resource(Contact, "/contact")
 api.add_resource(BnbListings, "/bnblistings")
 api.add_resource(MaidListings, "/maidlistings")
 api.add_resource(Disclaimer, "/disclaimer")
+api.add_resource(BnbDashboard, "/bnbdashboard")
 
 if __name__ == "__main__":
     from db import db

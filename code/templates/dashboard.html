@@ -1,0 +1,57 @@
+{% extends '_layout.html' %}
+
+{% block content %}
+
+    <div class="row">
+        <div class="col">
+            <h2 class="mt-1 display-4">
+                {{ title }}
+            </h2>
+            <hr>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="d-inline card-title">BnB Listings</h5>
+                </div>
+                <div class="card-body">
+                    {% if bnbs|length > 0 %}
+                        <table class="table striped">
+                            <tr>
+                                <th>Id</th>
+                                <th>Title</th>
+                                <th>Summary</th>
+                                <th></th>
+                            </tr>
+
+                            {% for bnbs in bnb %}
+                                <tr>
+                                    <td>{{ bnb.id }}</td>
+                                    <td>
+                                        {{ bnb.title }}
+                                    </td>
+                                    <td>
+                                        {{ bnb.summary }}
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn btn-success">Edit</a>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+
+                        </table>
+                    {% else %}
+                        <span class="display-4 text-info">No listings in the database</span>
+                    {% endif %}
+                </div>
+                <div class="card-footer text-right">
+                    <a href="#" class="btn btn-primary">Add New Listing</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}

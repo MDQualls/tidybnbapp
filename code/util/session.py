@@ -21,6 +21,18 @@ def is_logged_in(f):
     return wrap
 
 
+def is_admin_logged_in(f):
+    @wraps(f)
+    def wrap(*args, **kwargs):
+        if "logged_in" in session and "is_admin" in session:
+            return f(*args, **kwargs)
+        else:
+            flash("Unauthorized, Please login", "danger")
+            return redirect(url_for("login"))
+
+    return wrap
+
+
 def end_session():
     session.clear()
 

@@ -2,18 +2,19 @@ from db import db
 
 
 class UserModel(db.Model):
-
     __tablename__ = "users"
 
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(80))
     password = db.Column(db.String(256))
     email_address = db.Column(db.String(80))
+    admin_user = db.Column(db.Boolean, default=False)
 
-    def __init__(self, username, password, email_address):
+    def __init__(self, username, password, email_address, admin_user=False):
         self.username = username
         self.password = password
         self.email_address = email_address
+        self.admin_user = admin_user
 
     def save_to_db(self):
         db.session.add(self)

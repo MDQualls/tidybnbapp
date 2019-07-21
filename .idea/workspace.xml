@@ -2,20 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fb4253f-12bc-4396-b59d-576e67b06ba6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/code/models/bnb.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/resources/bnblistings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/resources/disclaimer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/resources/maidlistings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/templates/bnblistings.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/templates/contact.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/templates/disclaimer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/templates/maidlistings.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webResources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/resources/addbnblisting.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/resources/bnbdashboard.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/templates/dashboard.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/resources/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/resources/contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/templates/_layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/code/templates/_layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/code/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/models/bnb.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/models/bnb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/models/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/models/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/resources/bnblistings.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/resources/bnblistings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/resources/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/resources/login.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/templates/includes/_navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/code/templates/includes/_navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/util/session.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/util/session.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,20 +23,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/app.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/code/models/bnb.py">
+        <entry file="file://$PROJECT_DIR$/code/resources/addbnblisting.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+            <state relative-caret-position="132">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,6 +49,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>csf</find>
+      <find>is_admin</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -77,28 +70,32 @@
         <option value="$PROJECT_DIR$/code/templates/includes/_csrf.html" />
         <option value="$PROJECT_DIR$/code/templates/register.html" />
         <option value="$PROJECT_DIR$/code/templates/includes/_includes.html" />
-        <option value="$PROJECT_DIR$/code/models/user.py" />
-        <option value="$PROJECT_DIR$/code/util/session.py" />
         <option value="$PROJECT_DIR$/code/templates/login.html" />
-        <option value="$PROJECT_DIR$/code/resources/login.py" />
         <option value="$PROJECT_DIR$/code/templates/account.html" />
         <option value="$PROJECT_DIR$/code/resources/account.py" />
         <option value="$PROJECT_DIR$/code/resources/logout.py" />
         <option value="$PROJECT_DIR$/code/resources/about.py" />
         <option value="$PROJECT_DIR$/code/templates/about.html" />
         <option value="$PROJECT_DIR$/code/templates/contact.html" />
-        <option value="$PROJECT_DIR$/code/resources/bnblistings.py" />
         <option value="$PROJECT_DIR$/code/resources/contact.py" />
         <option value="$PROJECT_DIR$/code/templates/bnblistings.html" />
         <option value="$PROJECT_DIR$/code/resources/maidlistings.py" />
         <option value="$PROJECT_DIR$/code/templates/maidlistings.html" />
         <option value="$PROJECT_DIR$/code/templates/home.html" />
-        <option value="$PROJECT_DIR$/code/templates/includes/_navbar.html" />
         <option value="$PROJECT_DIR$/code/templates/disclaimer.html" />
         <option value="$PROJECT_DIR$/code/templates/_layout.html" />
         <option value="$PROJECT_DIR$/code/resources/disclaimer.py" />
-        <option value="$PROJECT_DIR$/code/app.py" />
+        <option value="$PROJECT_DIR$/code/util/session.py" />
+        <option value="$PROJECT_DIR$/code/resources/login.py" />
+        <option value="$PROJECT_DIR$/code/models/user.py" />
+        <option value="$PROJECT_DIR$/code/resources/bnblistings.py" />
         <option value="$PROJECT_DIR$/code/models/bnb.py" />
+        <option value="$PROJECT_DIR$/code/resources/dashboard.py" />
+        <option value="$PROJECT_DIR$/code/templates/dashboard.html" />
+        <option value="$PROJECT_DIR$/code/resources/bnbdashboard.py" />
+        <option value="$PROJECT_DIR$/code/app.py" />
+        <option value="$PROJECT_DIR$/code/templates/includes/_navbar.html" />
+        <option value="$PROJECT_DIR$/code/resources/addbnblisting.py" />
       </list>
     </option>
   </component>
@@ -139,7 +136,32 @@
               <item name="tidyapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="tidyapp" type="462c0819:PsiDirectoryNode" />
               <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tidyapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tidyapp" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tidyapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tidyapp" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tidyapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tidyapp" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="includes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tidyapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tidyapp" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -215,12 +237,12 @@
       <option name="presentableId" value="Default" />
       <updated>1563299299983</updated>
       <workItem from="1563299319269" duration="5211000" />
-      <workItem from="1563357969278" duration="17042000" />
+      <workItem from="1563357969278" duration="25210000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22253000" />
+    <option name="totallyTimeSpent" value="30421000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -230,9 +252,9 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.298441" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32962137" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.13585746" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.35746104" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -252,8 +274,19 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/tidyapp$tidyapp.coverage" NAME="tidyapp Coverage Results" MODIFIED="1563664791618" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code" />
+    <SUITE FILE_PATH="coverage/tidyapp$tidyapp.coverage" NAME="tidyapp Coverage Results" MODIFIED="1563719415807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/code/static/app.css">
@@ -339,43 +372,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/resources/login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="57" column="22" lean-forward="true" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/util/security.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/util/session.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/templates/account.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="40" column="14" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/resources/logout.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -420,16 +416,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/resources/bnblistings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="44" lean-forward="true" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/resources/maidlistings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
@@ -447,27 +433,6 @@
           <folding>
             <element signature="e#0#48#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/templates/includes/_navbar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="37" column="23" lean-forward="true" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/templates/bnblistings.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="25" lean-forward="true" selection-end-line="33" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -502,24 +467,126 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/models/user.py">
+    <entry file="file://$PROJECT_DIR$/code/util/security.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="254">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/app.py">
+    <entry file="file://$PROJECT_DIR$/code/templates/account.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        <state relative-caret-position="414">
+          <caret line="27" column="26" lean-forward="true" selection-end-line="40" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/resources/login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="55" column="13" lean-forward="true" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/util/session.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/templates/bnblistings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="76" selection-start-line="12" selection-start-column="76" selection-end-line="12" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/resources/bnblistings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/models/user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="44" lean-forward="true" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/code/models/bnb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        <state relative-caret-position="220">
+          <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/tidyapp/Lib/site-packages/sqlalchemy/ext/declarative/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="813">
+          <caret line="197" column="29" lean-forward="true" selection-start-line="197" selection-start-column="29" selection-end-line="197" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/templates/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="36" lean-forward="true" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/resources/bnbdashboard.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="43" lean-forward="true" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="53" column="45" lean-forward="true" selection-start-line="53" selection-start-column="45" selection-end-line="53" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="98" selection-start-line="16" selection-start-column="95" selection-end-line="16" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/templates/includes/_navbar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="34" column="50" lean-forward="true" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/resources/addbnblisting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
