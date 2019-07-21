@@ -1,6 +1,7 @@
 # from schematics.exceptions import ValidationError
 from werkzeug.security import safe_str_cmp
 
+
 # def min_length(fld, min_length):
 #     def validate(s):
 #         if len(s) >= min_length:
@@ -31,6 +32,16 @@ def is_boolean(fld: str) -> bool:
     if isinstance(fld, bool):
         return True
     return False
+
+
+def is_int(fld: str) -> bool:
+    try:
+        int(fld)
+        return True
+    except Exception as e:
+        return False
+
+
 
 
 def strings_match(str1: str, str2: str) -> bool:

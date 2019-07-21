@@ -19,11 +19,13 @@ class BnbModel(db.Model):
     city = db.Column(db.String(80))
     state = db.Column(db.String(80))
     zip_code = db.Column(db.String(20))
+    square_footage = db.Column(db.String(20))
 
     def __init__(self, title: str, summary: str, content: str, thumbnail: str, active: bool,
                  archived: bool, deleted: bool, bedrooms: int, bathrooms: int, street_address_1: str,
-                 street_address_2: str, city: str, state: str, zip_code: str
+                 street_address_2: str, city: str, state: str, zip_code: str, square_footage: str
                  ):
+        self.square_footage = square_footage
         self.zip_code = zip_code
         self.state = state
         self.city = city
@@ -56,6 +58,7 @@ class BnbModel(db.Model):
             "city": self.city,
             "state": self.state,
             "zip_code": self.zip_code,
+            "square_footage": self.square_footage,
         }
 
     @classmethod

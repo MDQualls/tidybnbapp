@@ -15,5 +15,5 @@ class BnbDashboard(Resource):
         bnbs = BnbModel.query.all()
 
         return make_response(
-            render_template("dashboard.html", title=self.title, bnbs=bnbs), 200, self.headers
+            render_template("bnbdashboard.html", title=self.title, bnbs=bnbs), 200, self.headers
         )
