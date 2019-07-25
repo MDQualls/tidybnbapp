@@ -1,0 +1,23 @@
+{% extends '_layout.html' %}
+
+{% block content %}
+    <h1 class="display-4">404 Error</h1>
+
+    <div id="fourohfour_error_template" class="card text-white bg-info mt-2">
+        <div class="card-body">
+            <div class="row">
+                <div class="col">                   
+                    <div class="col">
+                        <p class="card-text">
+                            The resource you are looking for was not found.
+                        </p>
+                    </div>                
+                </div>
+            </div>        
+        </div>
+        <div class="card-footer">
+            <a href="{{ url_for("home") }}" class="btn btn-secondary">Return to home page.</a>
+        </div>
+    </div>
+
+{% endblock content %}

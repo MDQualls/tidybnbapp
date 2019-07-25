@@ -48,6 +48,14 @@ def handle_csrf_error(reason):
     )
 
 
+@app.errorhandler(404)
+def handle_404_error(reason):
+    return make_response(
+        render_template('error/fourohfour.html', title="404 Error"), 404,
+        {"Content-Type": "text/html"}
+    )
+
+
 api.add_resource(Home, "/", "/home")
 api.add_resource(Login, "/login")
 api.add_resource(Register, "/register")
