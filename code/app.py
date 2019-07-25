@@ -17,6 +17,7 @@ from resources.disclaimer import Disclaimer
 from resources.bnbdashboard import BnbDashboard
 from resources.addbnblisting import AddBnbListing
 from resources.editbnblisting import EditBnbListing
+from resources.privacypolicy import PrivacyPolicy
 
 app = Flask(__name__)
 # app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://tidyuser:\G''ymP='WMTp4VR>+2+@localhost/tidyappdb1"
@@ -59,6 +60,7 @@ api.add_resource(Disclaimer, "/disclaimer")
 api.add_resource(BnbDashboard, "/bnbdashboard")
 api.add_resource(AddBnbListing, "/addbnblisting")
 api.add_resource(EditBnbListing, "/editbnblisting/<int:id>")
+api.add_resource(PrivacyPolicy, "/privacypolicy")
 
 if __name__ == "__main__":
     from db import db

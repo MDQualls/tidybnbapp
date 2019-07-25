@@ -25,7 +25,11 @@
         <footer id="sticky-footer" class="footer mt-auto py-3 bg-dark text-white-50">
             <div class="container text-center">
                 {% block footer_content %}
-                    <small>Copyright &copy; Michael Qualls <a href="{{ url_for("disclaimer") }}">Disclaimer</a></small>
+                    <small>
+                        Copyright &copy; Michael Qualls |
+                        <a href="{{ url_for("disclaimer") }}">Disclaimer</a> |
+                        <a href="{{ url_for("privacypolicy") }}">Privacy Policy</a>
+                    </small>
                 {% endblock %}
             </div>
         </footer>
