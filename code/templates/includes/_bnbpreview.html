@@ -1,0 +1,18 @@
+<div class="card mt-2">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="https://via.placeholder.com/400x400" alt="placeholder" class="img-thumbnail">
+            </div>
+            <div class="col-md-9">
+                <h3 class="card-title">{{ bnb.title }}</h3>
+                <p class="lead">
+                    {{ bnb.content }}
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="card-footer text-right">
+        <a href="{{ url_for('bnbdetail', id = bnb.id) }}" class="btn btn-primary">View Details &gt;&gt;</a>
+    </div>
+</div>

@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fb4253f-12bc-4396-b59d-576e67b06ba6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/code/resources/privacypolicy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/templates/privacypolicy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/mqual.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/mqual.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/resources/bnbdetail.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/templates/bnbdetail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/templates/includes/_bnbpreview.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/templates/_layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/code/templates/_layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/resources/bnblistings.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/resources/bnblistings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/templates/bnblistings.html" beforeDir="false" afterPath="$PROJECT_DIR$/code/templates/bnblistings.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,10 +33,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/resources/bnbdashboard.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/code/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+            <state relative-caret-position="448">
+              <caret line="67" column="21" lean-forward="true" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
               <folding>
                 <element signature="e#0#55#0" expanded="true" />
               </folding>
@@ -46,8 +59,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/resources/bnblistings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+            <state relative-caret-position="242">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
               </folding>
@@ -55,11 +68,60 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/templates/_layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="30" column="83" lean-forward="true" selection-start-line="30" selection-start-column="83" selection-end-line="30" selection-end-column="83" />
+            <state relative-caret-position="484">
+              <caret line="22" column="15" lean-forward="true" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/templates/includes/_bnbpreview.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="15" column="38" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="38" />
+              <folding>
+                <element signature="e#668#672#0#HTML" expanded="true" />
+                <element signature="e#672#676#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/resources/bnbdetail.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+              <folding>
+                <element signature="e#0#34#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/templates/bnbdetail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="470">
+              <caret line="50" column="18" lean-forward="true" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+              <folding>
+                <element signature="e#838#842#0#HTML" expanded="true" />
+                <element signature="e#842#846#0#HTML" expanded="true" />
+                <element signature="e#1609#1613#0#HTML" expanded="true" />
+                <element signature="e#1613#1617#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/templates/bnblistings.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="382">
+              <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -79,6 +141,7 @@
     <findStrings>
       <find>csf</find>
       <find>is_admin</find>
+      <find>post</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -106,7 +169,6 @@
         <option value="$PROJECT_DIR$/code/templates/about.html" />
         <option value="$PROJECT_DIR$/code/templates/contact.html" />
         <option value="$PROJECT_DIR$/code/resources/contact.py" />
-        <option value="$PROJECT_DIR$/code/templates/bnblistings.html" />
         <option value="$PROJECT_DIR$/code/resources/maidlistings.py" />
         <option value="$PROJECT_DIR$/code/templates/maidlistings.html" />
         <option value="$PROJECT_DIR$/code/templates/home.html" />
@@ -115,7 +177,6 @@
         <option value="$PROJECT_DIR$/code/util/session.py" />
         <option value="$PROJECT_DIR$/code/resources/login.py" />
         <option value="$PROJECT_DIR$/code/models/user.py" />
-        <option value="$PROJECT_DIR$/code/resources/bnblistings.py" />
         <option value="$PROJECT_DIR$/code/resources/dashboard.py" />
         <option value="$PROJECT_DIR$/code/templates/includes/_navbar.html" />
         <option value="$PROJECT_DIR$/code/templates/dashboard.html" />
@@ -128,9 +189,14 @@
         <option value="$PROJECT_DIR$/code/resources/editbnblisting.py" />
         <option value="$PROJECT_DIR$/code/templates/bnblistingform.html" />
         <option value="$PROJECT_DIR$/code/templates/privacypolicy.html" />
-        <option value="$PROJECT_DIR$/code/app.py" />
         <option value="$PROJECT_DIR$/code/resources/privacypolicy.py" />
         <option value="$PROJECT_DIR$/code/templates/_layout.html" />
+        <option value="$PROJECT_DIR$/code/resources/bnblistings.py" />
+        <option value="$PROJECT_DIR$/code/templates/bnblistings.html" />
+        <option value="$PROJECT_DIR$/code/templates/includes/_bnbpreview.html" />
+        <option value="$PROJECT_DIR$/code/templates/bnbdetail.html" />
+        <option value="$PROJECT_DIR$/code/resources/bnbdetail.py" />
+        <option value="$PROJECT_DIR$/code/app.py" />
       </list>
     </option>
   </component>
@@ -274,12 +340,12 @@
       <workItem from="1563357969278" duration="27607000" />
       <workItem from="1563732781816" duration="6108000" />
       <workItem from="1563929955302" duration="2619000" />
-      <workItem from="1564012651809" duration="600000" />
+      <workItem from="1564012651809" duration="2575000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42145000" />
+    <option name="totallyTimeSpent" value="44120000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -444,13 +510,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/templates/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="25" lean-forward="true" selection-end-line="33" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/resources/maidlistings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
@@ -509,13 +568,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
           <caret line="55" column="13" lean-forward="true" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/templates/bnblistings.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="76" selection-start-line="12" selection-start-column="76" selection-end-line="12" selection-end-column="76" />
         </state>
       </provider>
     </entry>
@@ -606,16 +658,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/resources/bnbdashboard.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/templates/bnbdashboard.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="616">
@@ -674,30 +716,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/app.py">
+    <entry file="file://$PROJECT_DIR$/code/templates/_layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="484">
+          <caret line="22" column="15" lean-forward="true" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/resources/bnblistings.py">
+    <entry file="file://$PROJECT_DIR$/code/resources/bnbdashboard.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        <state relative-caret-position="308">
+          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="35" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/templates/_layout.html">
+    <entry file="file://$PROJECT_DIR$/code/templates/bnblistings.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="30" column="83" lean-forward="true" selection-start-line="30" selection-start-column="83" selection-end-line="30" selection-end-column="83" />
+        <state relative-caret-position="382">
+          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/templates/includes/_bnbpreview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="38" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="38" />
+          <folding>
+            <element signature="e#668#672#0#HTML" expanded="true" />
+            <element signature="e#672#676#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/templates/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" selection-end-line="33" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/templates/bnbdetail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="50" column="18" lean-forward="true" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+          <folding>
+            <element signature="e#838#842#0#HTML" expanded="true" />
+            <element signature="e#842#846#0#HTML" expanded="true" />
+            <element signature="e#1609#1613#0#HTML" expanded="true" />
+            <element signature="e#1613#1617#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/resources/bnblistings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/resources/bnbdetail.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="67" column="21" lean-forward="true" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,0 +1,55 @@
+{% extends '_layout.html' %}
+
+{% block content %}
+
+    {% if bnb %}
+        <div class="row">
+            <div class="col">
+                <h2 class="mt-1 display-4">
+                    {{ bnb.title }}
+                </h2>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            {{ bnb.summary }}
+                        </h5>
+                        <p class="lead">
+                            {{ bnb.content }}
+                        </p>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="{{ url_for("bnblistings") }}" class="btn btn-primary">&lt;&lt; Return to BnB Listings</a>
+                </div>
+            </div>
+        </div>
+    {% else %}
+        <div class="row">
+            <div class="col">
+                <h2 class="mt-1 display-4">
+                    BnB not found
+                </h2>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="card-title">Sorry ...</h1>
+                        <p class="lead">The BnB you are looking for was not found.</p>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="{{ url_for("bnblistings") }}" class="btn btn-primary">&lt;&lt; Return to BnB Listings</a>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+
+{% endblock content %}
