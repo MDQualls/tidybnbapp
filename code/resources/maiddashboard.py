@@ -6,7 +6,7 @@ from models.maidplan import MaidPlanModel
 
 
 class MaidDashboard(Resource):
-    title = "Maid Dashboard"
+    title = "Maid Plan Dashboard"
     headers = {"Content-Type": "text/html"}
 
     @is_admin_logged_in
