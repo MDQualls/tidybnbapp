@@ -55,7 +55,7 @@ class AddBnbListing(Resource):
 
             if len(error) > 0:
                 return make_response(
-                    render_template("bnblistingform.html", title=self.title, error=error, cleandata=cleandata),
+                    render_template("bnbdashboard.html", title=self.title, error=error, cleandata=cleandata),
                     200,
                     self.headers,
                 )

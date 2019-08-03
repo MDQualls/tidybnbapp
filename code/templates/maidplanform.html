@@ -1,0 +1,43 @@
+{% extends '_layout.html' %}
+
+{% block content %}
+
+    <div class="row">
+        <div class="col">
+            <h2 class="mt-1 display-4">
+                {{ title }}
+            </h2>
+            <hr>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col">
+            <form action="#" method="POST">
+
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" class="form-control" id="title" name="title" placeholder="Enter the plan title"
+                           value="{{ cleandata['title'] }}" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="summary">Summary</label>
+                    <input type="text" class="form-control" id="summary" name="summary"
+                           placeholder="Enter a summary for your plan" value="{{ cleandata['summary'] }}"
+                           required>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description Content</label>
+                    <textarea class="form-control" name="description" id="description" cols="30"
+                              rows="10">{{ cleandata['description'] }}</textarea>
+                </div>
+
+                {% include 'includes/_csrf.html' %}
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+{% endblock content %}

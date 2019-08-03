@@ -8,7 +8,7 @@ class MaidPlanModel(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(80))
     summary = db.Column(db.String(240))
-    description = db.column(db.Text())
+    description = db.Column(db.Text())
     plan_creation_date = db.Column(db.DateTime, default=datetime.now())
     plan_update_date = db.Column(db.DateTime, default=None)
     deleted = db.Column(db.Boolean)

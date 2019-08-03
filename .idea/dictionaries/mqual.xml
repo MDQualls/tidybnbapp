@@ -2,13 +2,16 @@
   <dictionary name="mqual">
     <words>
       <w>addbnblisting</w>
+      <w>addmaidplan</w>
       <w>bnbdashboard</w>
+      <w>bnbdetail</w>
       <w>bnblistingform</w>
       <w>bnblistings</w>
       <w>cleandata</w>
       <w>editbnblisting</w>
       <w>maiddashboard</w>
       <w>maidlistings</w>
+      <w>maidplanform</w>
       <w>privacypolicy</w>
       <w>tablename</w>
     </words>

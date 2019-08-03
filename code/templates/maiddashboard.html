@@ -37,7 +37,7 @@
                                         {{ plan.summary }}
                                     </td>
                                     <td>
-                                        <a href="#" class="btn btn-success">Edit</a>
+                                        <a href="{{ url_for("editmaidplan", id=plan.id) }}" class="btn btn-success">Edit</a>
                                     </td>
                                 </tr>
                             {% endfor %}
@@ -48,7 +48,7 @@
                     {% endif %}
                 </div>
                 <div class="card-footer text-right">
-                    <a href="#" class="btn btn-primary">Add New Plan</a>
+                    <a href="{{ url_for("addmaidplan") }}" class="btn btn-primary">Add New Plan</a>
                 </div>
             </div>
         </div>
