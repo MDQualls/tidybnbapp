@@ -1,5 +1,4 @@
 from db import db
-from datetime import datetime
 
 
 class MaidPlanSchedule(db.Model):
@@ -11,11 +10,14 @@ class MaidPlanSchedule(db.Model):
     end_time = db.Column(db.Time, nullable=False, default=0)
     post_clean_buffer = db.Column(db.Time, nullable=False, default=0)
 
+    plan_id = db.Column(db.Integer, db.ForeignKey('maidplans.id'))
+    plan = db.relationship('MaidPlanModel')
+
     def __init__(self, schedule_date, start_time, end_time, post_clean_buffer):
         self.schedule_date = schedule_date
         self.start_time = start_time
         self.end_time = end_time
-        self.post_clean_buffer = post_clean_buffer
+        self.post_clean_buffer = post_clean_buffer,
 
     def json(self):
         return {
@@ -24,6 +26,7 @@ class MaidPlanSchedule(db.Model):
             "start_time": self.start_time,
             "end_time": self.end_time,
             "post_clean_buffer": self.post_clean_buffer,
+            "plan": [plan.json() for plan in self.plan.first()],
         }
 
     @classmethod
