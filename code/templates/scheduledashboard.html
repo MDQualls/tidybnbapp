@@ -2,33 +2,61 @@
 
 {% block content %}
 
-<div id="about_page" class="card mt-2">
-    <div class="card-body">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="col">
-                    <img src="https://via.placeholder.com/400x400" alt="placeholder" class="img-thumbnail">
+    <div class="row">
+        <div class="col">
+            <h2 class="mt-1 display-4">
+                {{ title }}
+            </h2>
+            <hr>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="d-inline card-title">Schedule Listings</h5>
                 </div>
-                <div class="col mt-2">
-                    <img src="https://via.placeholder.com/400x400" alt="placeholder" class="img-thumbnail">
+                <div class="card-body">
+                    {% if schedules|length > 0 %}
+                        <table class="table striped">
+                            <tr>
+                                <th>Id</th>
+                                <th>Name</th>
+                                <th>Date</th>
+                                <th>Start</th>
+                                <th>End</th>
+                                <th></th>
+                            </tr>
+
+                            {% for sched in schedules %}
+                                <tr>
+                                    <td>{{ sched.id }}</td>
+                                    <td>
+                                        {{ sched.schedule_name }}
+                                    </td>
+                                    <td>
+                                        {{ sched.schedule_date }}
+                                    </td>
+                                    <td>
+                                        {{ sched.start_time }}
+                                    </td>
+                                    <td>
+                                        {{ sched.end_time }}
+                                    </td>
+                                </tr>
+                            {% endfor %}
+
+                        </table>
+                    {% else %}
+                        <span class="display-4 text-info">No Schedules in the database</span>
+                    {% endif %}
                 </div>
-            </div>
-            <div class="col-md-8">
-                <div class="col text-center">
-                    <h3 class="card-title">{{ title }} Page</h3>
-                </div>
-                <div class="col">
-                    <p class="card-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <p class="card-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
+                <div class="card-footer text-right">
+                    <a href="{{ url_for("adminschedule") }}" class="btn btn-primary">Add New Schedule</a>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-
-{% endblock %}
+{% endblock content %}

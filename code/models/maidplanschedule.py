@@ -5,6 +5,7 @@ class MaidPlanSchedule(db.Model):
     __tablename__ = "maidplanschedule"
 
     id = db.Column(db.Integer, primary_key=True)
+    schedule_name = db.Column(db.String(80), nullable=False)
     schedule_date = db.Column(db.DateTime, nullable=False)
     start_time = db.Column(db.Time, nullable=False, default=0)
     end_time = db.Column(db.Time, nullable=False, default=0)
@@ -13,7 +14,8 @@ class MaidPlanSchedule(db.Model):
     plan_id = db.Column(db.Integer, db.ForeignKey('maidplans.id'))
     plan = db.relationship('MaidPlanModel')
 
-    def __init__(self, schedule_date, start_time, end_time, post_clean_buffer):
+    def __init__(self, schedule_name, schedule_date, start_time, end_time, post_clean_buffer):
+        self.schedule_name = schedule_name
         self.schedule_date = schedule_date
         self.start_time = start_time
         self.end_time = end_time
@@ -22,6 +24,7 @@ class MaidPlanSchedule(db.Model):
     def json(self):
         return {
             "id": self.id,
+            "schedule_name": self.schedule_name,
             "schedule_date": self.schedule_date,
             "start_time": self.start_time,
             "end_time": self.end_time,

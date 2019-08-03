@@ -3,6 +3,8 @@
     <words>
       <w>addbnblisting</w>
       <w>addmaidplan</w>
+      <w>adminschedule</w>
+      <w>adminscheduleform</w>
       <w>bnbdashboard</w>
       <w>bnbdetail</w>
       <w>bnblistingform</w>
@@ -19,6 +21,7 @@
       <w>privacypolicy</w>
       <w>scheduledashboard</w>
       <w>tablename</w>
+      <w>tdelta</w>
     </words>
   </dictionary>
 </component>

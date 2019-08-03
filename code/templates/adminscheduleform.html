@@ -1,0 +1,62 @@
+{% extends '_layout.html' %}
+
+{% block content %}
+
+    <div class="row">
+        <div class="col">
+            <h2 class="mt-1 display-4">
+                {{ title }}
+            </h2>
+            <hr>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col">
+            <form action="#" method="POST">
+
+                <div class="form-group">
+                    <label for="schedule_name">Schedule Name</label>
+                    <input type="text" class="form-control" id="schedule_name" name="schedule_name"
+                           placeholder="Enter descriptive name for this schedule"
+                           value="{{ cleandata['schedule_name'] }}" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="schedule_date">Date</label>
+                    <input type="date" class="form-control" id="schedule_date" name="schedule_date"
+                           placeholder="Enter the date for this schedule" value="{{ cleandata['schedule_date'] }}"
+                           required>
+                </div>
+
+                <div class="form-group">
+                    <label for="start_time">Start Time</label>
+                    <input type="time" class="form-control" id="start_time" name="start_time"
+                           placeholder="Enter the start time for this schedule" value="{{ cleandata['start_time'] }}"
+                           required>
+                </div>
+
+                <div class="form-group">
+                    <label for="end_time">End Time</label>
+                    <input type="time" class="form-control" id="end_time" name="end_time"
+                           placeholder="Enter the start time for this schedule" value="{{ cleandata['end_time'] }}"
+                           required>
+                </div>
+
+                <div class="form-group">
+                    <label data-toggle="tooltip" data-placement="top"
+                           title="Amount of time needed between scheduled cleanings" for="post_clean_buffer">Post
+                        Clean Time (minutes)</label>
+                    <input type="number" class="form-control" id="post_clean_buffer" name="post_clean_buffer"
+                           placeholder="Enter the amount of post cleaning time"
+                           value="{{ cleandata['post_clean_buffer'] }}"
+                           required>
+                </div>
+
+                {% include 'includes/_csrf.html' %}
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+{% endblock content %}

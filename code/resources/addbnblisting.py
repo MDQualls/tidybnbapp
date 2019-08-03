@@ -20,37 +20,33 @@ class AddBnbListing(Resource):
         try:
             data = request.form
 
-            cleandata = {}
-            for item in data:
-                cleandata[item] = escape(data[item])
-
             error = ""
 
-            if not in_length(cleandata["title"], 3, 80):
+            if not in_length(data["title"], 3, 80):
                 error = "Invalid title.  Title must be from 3 to 80 characters."
-            if not in_length(cleandata["summary"], 3, 240):
+            if not in_length(data["summary"], 3, 240):
                 error = "Invalid summary.  Summary must be from 3 to 240 characters."
-            if not min_length(cleandata["content"].strip(), 10):
+            if not min_length(data["content"].strip(), 10):
                 error = "Invalid content.  Content must be at least 10 characters."
-            if "active" in cleandata and not is_int(cleandata['active']):
+            if "active" in data and not is_int(data['active']):
                 error = "Invalid active entry.  'Active' entry must be an integer."
-            if "archived" in cleandata and not is_int(cleandata['archived']):
+            if "archived" in data and not is_int(data['archived']):
                 error = "Invalid archived entry.  'Archived' entry must be an integer."
-            if not is_int(cleandata['bedrooms']):
+            if not is_int(data['bedrooms']):
                 error = "Invalid bedrooms entry.  'Bedrooms' entry must be an integer."
-            if not is_int(cleandata['bathrooms']):
+            if not is_int(data['bathrooms']):
                 error = "Invalid bathrooms entry.  'Bathrooms' entry must be an integer."
-            if not in_length(cleandata["street_address_1"], 3, 80):
+            if not in_length(data["street_address_1"], 3, 80):
                 error = "Invalid street address 1.  'Street address 1' must be from 3 to 80 characters."
-            if cleandata['street_address_2'] and not max_length(cleandata["street_address_2"], 80):
+            if data['street_address_2'] and not max_length(data["street_address_2"], 80):
                 error = "Invalid street address 2.  'Street address 2' must be 80 characters or less."
-            if not in_length(cleandata["city"], 3, 80):
+            if not in_length(data["city"], 3, 80):
                 error = "Invalid city entry.  'City' must be from 3 to 80 characters."
-            if not in_length(cleandata["state"], 2, 80):
+            if not in_length(data["state"], 2, 80):
                 error = "Invalid state entry.  'State' must be from 2 to 80 characters."
-            if not in_length(cleandata["zip_code"], 5, 20):
+            if not in_length(data["zip_code"], 5, 20):
                 error = "Invalid zip code entry.  'Zip code' must be from 5 to 20 characters."
-            if not in_length(cleandata["square_footage"], 2, 20):
+            if not in_length(data["square_footage"], 2, 20):
                 error = "Invalid square footage entry.  'Square footage' must be from 2 to 20 characters."
 
             if len(error) > 0:
@@ -69,6 +65,10 @@ class AddBnbListing(Resource):
                 200,
                 self.headers,
             )
+
+        cleandata = {}
+        for item in data:
+            cleandata[item] = escape(data[item])
 
         post = BnbModel(
             title=cleandata["title"],

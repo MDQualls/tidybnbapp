@@ -1,13 +1,5 @@
-# from schematics.exceptions import ValidationError
 from werkzeug.security import safe_str_cmp
-
-
-# def min_length(fld, min_length):
-#     def validate(s):
-#         if len(s) >= min_length:
-#             return s
-#         raise ValidationError("{} must be a minimum of {} characters long".format(fld, min_length))
-#     return validate
+from datetime import datetime, time, timedelta
 
 
 def min_length(fld: str, min_len: int) -> bool:
@@ -42,7 +34,35 @@ def is_int(fld: str) -> bool:
         return False
 
 
-
-
 def strings_match(str1: str, str2: str) -> bool:
     return safe_str_cmp(str1, str2)
+
+
+def is_date(fld: str) -> bool:
+    try:
+        datetime.strptime(fld, '%Y-%m-%d')
+        return True
+    except Exception as e:
+        return False
+
+
+def verify_time_diff_positive(from_time: str, to_time: str) -> bool:
+    try:
+        FMT = '%H:%M:%S %p'
+        time_from_date = datetime.strptime(from_time, FMT)
+        time_to_date = datetime.strptime(to_time, FMT)
+        tdelta = time_to_date - time_to_date
+        return tdelta.seconds > 0
+    except Exception as e:
+        return False
+
+
+def are_dates_distinct(date1: str, date2: str) -> bool:
+    try:
+        FMT = '%Y-%m-%d %H:%M:%S %p'
+        first_date = datetime.strptime(date1, FMT)
+        second_date = datetime.strptime(date2, FMT)
+        return first_date == second_date
+    except Exception as e:
+        return False
+
