@@ -42,7 +42,7 @@ class AdminSchedule(Resource):
 
             if len(error) > 0:
                 return make_response(
-                    render_template("scheduledashboard.html", title=self.title, error=error, cleandata=cleandata),
+                    render_template("adminscheduleform.html", title=self.title, error=error, cleandata=data),
                     200,
                     self.headers,
                 )

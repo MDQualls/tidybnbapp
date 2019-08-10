@@ -60,8 +60,9 @@ def verify_time_diff_positive(from_time: str, to_time: str) -> bool:
         FMT = '%H:%M'
         time_from_date = datetime.strptime(from_time, FMT)
         time_to_date = datetime.strptime(to_time, FMT)
-        tdelta = time_from_date - time_to_date
-        return tdelta.seconds > 0
+        from_delta = timedelta(hours=time_from_date.hour, minutes=time_from_date.minute)
+        to_delta = timedelta(hours=time_to_date.hour, minutes=time_to_date.minute)
+        return from_delta < to_delta
     except Exception as e:
         return False
 

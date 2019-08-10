@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7fb4253f-12bc-4396-b59d-576e67b06ba6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/code/resources/adminschedule.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/resources/adminschedule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/templates/scheduledashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/code/templates/scheduledashboard.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/util/validators.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/util/validators.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,8 +34,8 @@
             <file pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/code/resources/addbnblisting.py">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="192">
-                    <caret line="23" column="31" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="31" />
+                  <state relative-caret-position="408">
+                    <caret line="32" column="60" lean-forward="true" selection-start-line="32" selection-start-column="60" selection-end-line="32" selection-end-column="60" />
                     <folding>
                       <element signature="e#0#91#0" expanded="true" />
                     </folding>
@@ -73,8 +74,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/templates/scheduledashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1200">
-              <caret line="50" column="30" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
+            <state relative-caret-position="720">
+              <caret line="39" column="41" lean-forward="true" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -82,8 +83,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/util/validators.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="59" column="21" lean-forward="true" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+            <state relative-caret-position="312">
+              <caret line="64" selection-start-line="64" selection-end-line="64" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
               </folding>
@@ -103,8 +104,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/code/resources/adminschedule.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+            <state relative-caret-position="196">
+              <caret line="30" column="87" lean-forward="true" selection-start-line="30" selection-start-column="87" selection-end-line="30" selection-end-column="87" />
               <folding>
                 <element signature="e#0#74#0" expanded="true" />
               </folding>
@@ -239,11 +240,11 @@
         <option value="$PROJECT_DIR$/code/resources/scheduledashboard.py" />
         <option value="$PROJECT_DIR$/code/models/maidplanschedule.py" />
         <option value="$PROJECT_DIR$/code/app.py" />
-        <option value="$PROJECT_DIR$/code/templates/scheduledashboard.html" />
         <option value="$PROJECT_DIR$/code/templates/adminscheduleform.html" />
         <option value="$PROJECT_DIR$/code/resources/addbnblisting.py" />
-        <option value="$PROJECT_DIR$/code/util/validators.py" />
+        <option value="$PROJECT_DIR$/code/templates/scheduledashboard.html" />
         <option value="$PROJECT_DIR$/code/resources/adminschedule.py" />
+        <option value="$PROJECT_DIR$/code/util/validators.py" />
       </list>
     </option>
   </component>
@@ -378,12 +379,12 @@
       <workItem from="1564236932353" duration="57000" />
       <workItem from="1564615274656" duration="4665000" />
       <workItem from="1564846161256" duration="13832000" />
-      <workItem from="1565451610069" duration="3568000" />
+      <workItem from="1565451610069" duration="4659000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69447000" />
+    <option name="totallyTimeSpent" value="70538000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -423,6 +424,11 @@
           <line>22</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/util/validators.py</url>
+          <line>59</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -441,7 +447,7 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/tidyapp$tidyapp.coverage" NAME="tidyapp Coverage Results" MODIFIED="1565454033000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code" />
+    <SUITE FILE_PATH="coverage/tidyapp$tidyapp.coverage" NAME="tidyapp Coverage Results" MODIFIED="1565456378056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/code/resources/login.py">
@@ -783,13 +789,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/templates/scheduledashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="50" column="30" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/templates/adminscheduleform.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="984">
@@ -814,16 +813,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/resources/addbnblisting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="23" column="31" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#91#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/util/session.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
@@ -841,10 +830,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/code/templates/scheduledashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="39" column="41" lean-forward="true" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/resources/addbnblisting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="32" column="60" lean-forward="true" selection-start-line="32" selection-start-column="60" selection-end-line="32" selection-end-column="60" />
+          <folding>
+            <element signature="e#0#91#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/code/util/validators.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="59" column="21" lean-forward="true" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+        <state relative-caret-position="312">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
           </folding>
@@ -853,8 +859,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/code/resources/adminschedule.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        <state relative-caret-position="196">
+          <caret line="30" column="87" lean-forward="true" selection-start-line="30" selection-start-column="87" selection-end-line="30" selection-end-column="87" />
           <folding>
             <element signature="e#0#74#0" expanded="true" />
           </folding>
