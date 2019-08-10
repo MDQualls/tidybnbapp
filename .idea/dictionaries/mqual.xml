@@ -3,10 +3,12 @@
     <words>
       <w>addbnblisting</w>
       <w>addmaidplan</w>
+      <w>addschedule</w>
       <w>adminschedule</w>
       <w>adminscheduleform</w>
       <w>bnbdashboard</w>
       <w>bnbdetail</w>
+      <w>bnblisting</w>
       <w>bnblistingform</w>
       <w>bnblistings</w>
       <w>cleandata</w>
@@ -15,6 +17,7 @@
       <w>fourohfour</w>
       <w>maiddashboard</w>
       <w>maidlistings</w>
+      <w>maidplan</w>
       <w>maidplanform</w>
       <w>maidplans</w>
       <w>maidplanschedule</w>

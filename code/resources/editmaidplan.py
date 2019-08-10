@@ -1,7 +1,7 @@
 from flask import make_response, render_template, request, escape, flash, redirect, url_for
 from flask_restful import Resource
 from util.session import is_admin_logged_in
-from util.validators import in_length, min_length
+from util.modelvalidators import validate_maidplan
 
 from models.maidplan import MaidPlanModel
 
@@ -27,14 +27,7 @@ class EditMaidPlan(Resource):
         try:
             data = request.form
 
-            error = ""
-
-            if not in_length(data["title"], 3, 80):
-                error = "Invalid title.  Title must be from 3 to 80 characters."
-            if not in_length(data["summary"], 3, 240):
-                error = "Invalid summary.  Summary must be from 3 to 240 characters."
-            if not min_length(data["description"].strip(), 10):
-                error = "Invalid description.  Description must be at least 10 characters."
+            error = validate_maidplan(data)
 
             if len(error) > 0:
                 return make_response(

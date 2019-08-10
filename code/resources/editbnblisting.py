@@ -3,7 +3,7 @@ from flask import make_response, render_template, flash, redirect, url_for, esca
 
 from models.bnb import BnbModel
 from util.session import is_admin_logged_in
-from util.validators import in_length, min_length, is_int, max_length
+from util.modelvalidators import validate_bnblisting
 
 
 class EditBnbListing(Resource):
@@ -27,34 +27,7 @@ class EditBnbListing(Resource):
         try:
             data = request.form
 
-            error = ""
-
-            if not in_length(data["title"], 3, 80):
-                error = "Invalid title.  Title must be from 3 to 80 characters."
-            if not in_length(data["summary"], 3, 240):
-                error = "Invalid summary.  Summary must be from 3 to 240 characters."
-            if not min_length(data["content"].strip(), 10):
-                error = "Invalid content.  Content must be at least 10 characters."
-            if "active" in data and not is_int(data['active']):
-                error = "Invalid active entry.  'Active' entry must be an integer."
-            if "archived" in data and not is_int(data['archived']):
-                error = "Invalid archived entry.  'Archived' entry must be an integer."
-            if not is_int(data['bedrooms']):
-                error = "Invalid bedrooms entry.  'Bedrooms' entry must be an integer."
-            if not is_int(data['bathrooms']):
-                error = "Invalid bathrooms entry.  'Bathrooms' entry must be an integer."
-            if not in_length(data["street_address_1"], 3, 80):
-                error = "Invalid street address 1.  'Street address 1' must be from 3 to 80 characters."
-            if data['street_address_2'] and not max_length(data["street_address_2"], 80):
-                error = "Invalid street address 2.  'Street address 2' must be 80 characters or less."
-            if not in_length(data["city"], 3, 80):
-                error = "Invalid city entry.  'City' must be from 3 to 80 characters."
-            if not in_length(data["state"], 2, 80):
-                error = "Invalid state entry.  'State' must be from 2 to 80 characters."
-            if not in_length(data["zip_code"], 5, 20):
-                error = "Invalid zip code entry.  'Zip code' must be from 5 to 20 characters."
-            if not in_length(data["square_footage"], 2, 20):
-                error = "Invalid data footage entry.  'Square footage' must be from 2 to 20 characters."
+            error = validate_bnblisting(data)
 
             if len(error) > 0:
                 return make_response(
