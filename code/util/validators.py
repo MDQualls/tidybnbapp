@@ -46,6 +46,15 @@ def is_date(fld: str) -> bool:
         return False
 
 
+def is_time(fld: str) -> bool:
+    FMT = '%H:%M:%S %p'
+    try:
+        datetime.strptime(fld, FMT)
+        return True
+    except ValueError:
+        return False
+
+
 def verify_time_diff_positive(from_time: str, to_time: str) -> bool:
     try:
         FMT = '%H:%M:%S %p'
@@ -65,4 +74,3 @@ def are_dates_distinct(date1: str, date2: str) -> bool:
         return first_date == second_date
     except Exception as e:
         return False
-

@@ -17,6 +17,9 @@ class AddBnbListing(Resource):
 
     @is_admin_logged_in
     def post(self):
+
+        cleandata = {}
+
         try:
             data = request.form
 
@@ -66,7 +69,6 @@ class AddBnbListing(Resource):
                 self.headers,
             )
 
-        cleandata = {}
         for item in data:
             cleandata[item] = escape(data[item])
 
