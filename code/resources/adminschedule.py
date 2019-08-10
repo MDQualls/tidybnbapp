@@ -23,7 +23,7 @@ class AdminSchedule(Resource):
         cleandata = {}
 
         try:
-            data = request.data
+            data = request.form
 
             error = ""
 

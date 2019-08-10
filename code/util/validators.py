@@ -47,7 +47,7 @@ def is_date(fld: str) -> bool:
 
 
 def is_time(fld: str) -> bool:
-    FMT = '%H:%M:%S %p'
+    FMT = '%H:%M'
     try:
         datetime.strptime(fld, FMT)
         return True
@@ -57,10 +57,10 @@ def is_time(fld: str) -> bool:
 
 def verify_time_diff_positive(from_time: str, to_time: str) -> bool:
     try:
-        FMT = '%H:%M:%S %p'
+        FMT = '%H:%M'
         time_from_date = datetime.strptime(from_time, FMT)
         time_to_date = datetime.strptime(to_time, FMT)
-        tdelta = time_to_date - time_to_date
+        tdelta = time_from_date - time_to_date
         return tdelta.seconds > 0
     except Exception as e:
         return False
