@@ -26,7 +26,7 @@
                                 <th>Date</th>
                                 <th>Start</th>
                                 <th>End</th>
-                                <th></th>
+                                <th>Edit</th>
                             </tr>
 
                             {% for sched in schedules %}
@@ -43,6 +43,9 @@
                                     </td>
                                     <td>
                                         {{ sched.end_time.strftime('%H:%M %p') }}
+                                    </td>
+                                    <td>
+                                        <a href="{{ url_for("editschedule", id=sched.id) }}" class="btn btn-success">Edit</a>
                                     </td>
                                 </tr>
                             {% endfor %}

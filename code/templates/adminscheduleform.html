@@ -25,7 +25,8 @@
                 <div class="form-group">
                     <label for="schedule_date">Date</label>
                     <input type="date" class="form-control" id="schedule_date" name="schedule_date"
-                           placeholder="Enter the date for this schedule" value="{{ cleandata['schedule_date'] }}"
+                           placeholder="Enter the date for this schedule"
+                           value="{{ schedule_date|format_datetime() }}"
                            required>
                 </div>
 

@@ -14,7 +14,8 @@ class AddSchedule(Resource):
         cleandata = {}
 
         return make_response(
-            render_template("adminscheduleform.html", title=self.title, cleandata=cleandata), 200, self.headers
+            render_template("adminscheduleform.html", title=self.title, cleandata=cleandata, schedule_date=""), 200,
+            self.headers
         )
 
     @is_admin_logged_in

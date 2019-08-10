@@ -3,6 +3,7 @@ from flask_restful import Api
 import secrets
 from util.csrfprotect import csrf
 from flask_wtf.csrf import CSRFError
+from util.templatefilters import blueprint
 
 from resources.home import Home
 from resources.login import Login
@@ -24,8 +25,10 @@ from resources.addmaidplan import AddMaidPlan
 from resources.editmaidplan import EditMaidPlan
 from resources.scheduledashboard import ScheduleDashboard
 from resources.addschedule import AddSchedule
+from resources.editschedule import EditSchedule
 
 app = Flask(__name__)
+app.register_blueprint(blueprint)
 # app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://tidyuser:\G''ymP='WMTp4VR>+2+@localhost/tidyappdb1"
 app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://root:x6xzyi@localhost/tidyappdb1"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
@@ -81,6 +84,7 @@ api.add_resource(AddMaidPlan, "/addmaidplan")
 api.add_resource(EditMaidPlan, "/editmaidplan/<int:id>")
 api.add_resource(ScheduleDashboard, "/scheduledashboard")
 api.add_resource(AddSchedule, "/addschedule")
+api.add_resource(EditSchedule, "/editschedule/<int:id>")
 
 if __name__ == "__main__":
     from db import db

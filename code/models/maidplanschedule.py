@@ -9,7 +9,7 @@ class MaidPlanSchedule(db.Model):
     schedule_date = db.Column(db.DateTime, nullable=False)
     start_time = db.Column(db.Time, nullable=False, default=0)
     end_time = db.Column(db.Time, nullable=False, default=0)
-    post_clean_buffer = db.Column(db.Time, nullable=False, default=0)
+    post_clean_buffer = db.Column(db.Integer, nullable=False, default=0)
 
     plan_id = db.Column(db.Integer, db.ForeignKey('maidplans.id'))
     plan = db.relationship('MaidPlanModel')
