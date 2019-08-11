@@ -3,6 +3,7 @@ from flask_restful import Resource
 from models.maidplanschedule import MaidPlanSchedule
 from util.session import is_admin_logged_in
 from util.modelvalidators import validate_schedule
+from datetime import datetime
 
 
 class AddSchedule(Resource):
@@ -30,7 +31,8 @@ class AddSchedule(Resource):
 
             if len(error) > 0:
                 return make_response(
-                    render_template("adminscheduleform.html", title=self.title, error=error, cleandata=data),
+                    render_template("adminscheduleform.html", title=self.title, error=error, cleandata=data,
+                                    schedule_date=datetime.strptime(data['schedule_date'], '%Y-%m-%d')),
                     200,
                     self.headers,
                 )

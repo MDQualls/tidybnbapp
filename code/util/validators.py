@@ -47,8 +47,10 @@ def is_date(fld: str) -> bool:
 
 
 def is_time(fld: str) -> bool:
-    FMT = '%H:%M'
+    FMT = '%H:%M:%S'
     try:
+        if len(fld) == 5:
+            fld = "{}:{}".format(fld, '00')
         datetime.strptime(fld, FMT)
         return True
     except ValueError:
@@ -57,8 +59,12 @@ def is_time(fld: str) -> bool:
 
 def verify_time_diff_positive(from_time: str, to_time: str) -> bool:
     try:
-        FMT = '%H:%M'
+        FMT = '%H:%M:%S'
+        if len(from_time) == 5:
+            from_time = "{}:{}".format(from_time, '00')
         time_from_date = datetime.strptime(from_time, FMT)
+        if len(to_time) == 5:
+            to_time = "{}:{}".format(to_time, '00')
         time_to_date = datetime.strptime(to_time, FMT)
         from_delta = timedelta(hours=time_from_date.hour, minutes=time_from_date.minute)
         to_delta = timedelta(hours=time_to_date.hour, minutes=time_to_date.minute)
