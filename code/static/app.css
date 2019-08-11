@@ -23,3 +23,19 @@ body {
 #about_page .card-text {
     font-size: 20px;
 }
+
+.schedule-filter-form, .schedule-filter-group {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.schedule-filter-group label {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.schedule-filter-group h5 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
