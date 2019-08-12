@@ -1,0 +1,45 @@
+<!-- Modal -->
+<div class="modal fade" id="copy-maid-schedule-{{ sched.id }}" tabindex="-1"
+     role="dialog"
+     aria-labelledby="copy-maid-schedule-label-{{ sched.id }}"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5
+                        id="copy-maid-schedule-label-{{ sched.id }}">
+                    Copy '{{ sched.schedule_name }}'
+                    for '{{ sched.schedule_date.strftime('%m/%d/%Y') }}'
+                    to a new date.
+                </h5>
+                <button type="button" class="close" data-dismiss="modal"
+                        aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="form-inline" action="#" id="schedule-copy-form">
+                    <div class="form-group mx-sm-3 mb-2">
+                        <label for="schedule_date_copy_to_{{ sched.id }}">
+                            Date:
+                        </label>
+                        <input type="date" class="form-control"
+                               id="schedule_date_copy_to_{{ sched.id }}"
+                               name="schedule_date_copy_to_{{ sched.id }}"
+                               placeholder="Enter the date for this schedule"
+                               value=""
+                               required>
+                    </div>
+                    {% include 'includes/_csrf.html' %}
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary"
+                        data-dismiss="modal">Close
+                </button>
+                <button type="button" class="btn btn-primary">Save changes
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

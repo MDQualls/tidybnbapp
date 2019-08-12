@@ -21,10 +21,10 @@
                             <select class="form-control-sm" name="scheduleFilterList" id="scheduleFilterList">
                                 {% for x in scheduleFilterList %}
                                     <option
-                                        {% if x == timePeriod %}
-                                            selected
-                                        {% endif %}
-                                        value="{{ x }}">{{ x }}
+                                            {% if x == timePeriod %}
+                                                selected
+                                            {% endif %}
+                                                value="{{ x }}">{{ x }}
                                     </option>
                                 {% endfor %}
                             </select>
@@ -71,6 +71,13 @@
                                     </td>
                                     <td>
                                         <a href="{{ url_for("editschedule", id=sched.id) }}" class="btn btn-success">Edit</a>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target="#copy-maid-schedule-{{ sched.id }}">
+                                            Copy
+                                        </button>
+
+                                        {% include 'includes/_copyschedule.html' %}
                                     </td>
                                 </tr>
                             {% endfor %}
