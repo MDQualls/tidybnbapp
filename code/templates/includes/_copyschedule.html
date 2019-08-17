@@ -4,21 +4,22 @@
      aria-labelledby="copy-maid-schedule-label-{{ sched.id }}"
      aria-hidden="true">
     <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5
-                        id="copy-maid-schedule-label-{{ sched.id }}">
-                    Copy '{{ sched.schedule_name }}'
-                    for '{{ sched.schedule_date.strftime('%m/%d/%Y') }}'
-                    to a new date.
-                </h5>
-                <button type="button" class="close" data-dismiss="modal"
-                        aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form class="form-inline" action="#" id="schedule-copy-form">
+        <form method="post" class="form-inline" action="{{ url_for("copyschedule") }}" id="schedule-copy-form">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5
+                            id="copy-maid-schedule-label-{{ sched.id }}">
+                        Copy '{{ sched.schedule_name }}'
+                        for '{{ sched.schedule_date.strftime('%m/%d/%Y') }}'
+                        to a new date.
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal"
+                            aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
                     <div class="form-group mx-sm-3 mb-2">
                         <label for="schedule_date_copy_to_{{ sched.id }}">
                             Date:
@@ -30,16 +31,19 @@
                                value=""
                                required>
                     </div>
+                    <input type="hidden" id="sched_id_{{ sched.id }}" name="sched_id_{{ sched.id }}"
+                           value="{{ sched.id }}">
                     {% include 'includes/_csrf.html' %}
-                </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary"
+                            data-dismiss="modal">Close
+                    </button>
+                    <button type="submit" class="btn btn-primary">Save changes
+                    </button>
+                </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary"
-                        data-dismiss="modal">Close
-                </button>
-                <button type="button" class="btn btn-primary">Save changes
-                </button>
-            </div>
-        </div>
+        </form>
     </div>
 </div>

@@ -23,7 +23,7 @@ from resources.bnbdetail import BnbDetail
 from resources.maiddashboard import MaidDashboard
 from resources.addmaidplan import AddMaidPlan
 from resources.editmaidplan import EditMaidPlan
-from resources.scheduledashboard import ScheduleDashboard
+from resources.scheduledashboard import ScheduleDashboard, CopySchedule
 from resources.addschedule import AddSchedule
 from resources.editschedule import EditSchedule
 
@@ -85,6 +85,7 @@ api.add_resource(EditMaidPlan, "/editmaidplan/<int:id>")
 api.add_resource(ScheduleDashboard, "/scheduledashboard")
 api.add_resource(AddSchedule, "/addschedule")
 api.add_resource(EditSchedule, "/editschedule/<int:id>")
+api.add_resource(CopySchedule, "/copyschedule")
 
 if __name__ == "__main__":
     from db import db
