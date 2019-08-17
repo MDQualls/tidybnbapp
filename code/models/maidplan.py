@@ -1,6 +1,6 @@
 from db import db
 from datetime import datetime
-from models.maidplanschedule import MaidPlanSchedule
+from models.maidplanscheduleplan import MaidPlanSchedulePlan
 
 
 class MaidPlanModel(db.Model):
@@ -14,7 +14,8 @@ class MaidPlanModel(db.Model):
     plan_update_date = db.Column(db.DateTime, default=None)
     deleted = db.Column(db.Boolean)
 
-    schedule = db.relationship('MaidPlanSchedule', lazy='dynamic')
+    schedule = db.relationship('MaidPlanSchedule', secondary="maidplanscheduleplan", backref='maidplans',
+                               lazy='dynamic')
 
     def __init__(self, title, summary, description, deleted):
         self.title = title

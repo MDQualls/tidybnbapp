@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fb4253f-12bc-4396-b59d-576e67b06ba6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/code/templates/includes/_scheduleFilter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/models/maidplanscheduleplan.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/mqual.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/mqual.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/resources/scheduledashboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/resources/scheduledashboard.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/code/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/templates/scheduledashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/code/templates/scheduledashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/models/maidplan.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/models/maidplan.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/models/maidplanschedule.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/models/maidplanschedule.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,20 +30,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/code/templates/scheduledashboard.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/models/maidplan.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="60" column="32" lean-forward="true" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
+            <state relative-caret-position="216">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="e#0#17#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/code/models/maidplanscheduleplan.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/templates/includes/_scheduleFilter.html">
+        <entry file="file://$PROJECT_DIR$/code/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="14" column="41" lean-forward="true" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+            <state relative-caret-position="1800">
+              <caret line="75" column="43" lean-forward="true" selection-start-line="75" selection-start-column="43" selection-end-line="75" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#55#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/models/maidplanschedule.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="9" column="62" lean-forward="true" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/db.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="21" selection-start-column="5" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -54,8 +87,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -81,7 +114,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/code/resources/maidlistings.py" />
         <option value="$PROJECT_DIR$/code/templates/maidlistings.html" />
         <option value="$PROJECT_DIR$/code/templates/disclaimer.html" />
         <option value="$PROJECT_DIR$/code/resources/disclaimer.py" />
@@ -104,7 +136,6 @@
         <option value="$PROJECT_DIR$/code/templates/error/fourohfour.html" />
         <option value="$PROJECT_DIR$/code/models/mainplan.py" />
         <option value="$PROJECT_DIR$/code/templates/maiddashboard.html" />
-        <option value="$PROJECT_DIR$/code/models/maidplan.py" />
         <option value="$PROJECT_DIR$/code/templates/includes/_navbar.html" />
         <option value="$PROJECT_DIR$/code/resources/adminschedule.py" />
         <option value="$PROJECT_DIR$/code/resources/editbnblisting.py" />
@@ -112,7 +143,6 @@
         <option value="$PROJECT_DIR$/code/resources/addmaidplan.py" />
         <option value="$PROJECT_DIR$/code/resources/editmaidplan.py" />
         <option value="$PROJECT_DIR$/code/resources/source.py" />
-        <option value="$PROJECT_DIR$/code/models/maidplanschedule.py" />
         <option value="$PROJECT_DIR$/code/resources/editschedule.py" />
         <option value="$PROJECT_DIR$/code/resources/addschedule.py" />
         <option value="$PROJECT_DIR$/code/util/validators.py" />
@@ -132,6 +162,9 @@
         <option value="$PROJECT_DIR$/code/templates/home.html" />
         <option value="$PROJECT_DIR$/code/templates/includes/_scheduleFilter.html" />
         <option value="$PROJECT_DIR$/code/templates/scheduledashboard.html" />
+        <option value="$PROJECT_DIR$/code/models/maidplanschedule.py" />
+        <option value="$PROJECT_DIR$/code/models/maidplanscheduleplan.py" />
+        <option value="$PROJECT_DIR$/code/models/maidplan.py" />
       </list>
     </option>
   </component>
@@ -165,14 +198,7 @@
               <item name="tidyapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="tidyapp" type="462c0819:PsiDirectoryNode" />
               <item name="code" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tidyapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tidyapp" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="includes" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -259,24 +285,24 @@
       <workItem from="1565451610069" duration="12437000" />
       <workItem from="1565533886302" duration="6839000" />
       <workItem from="1565547806682" duration="12514000" />
-      <workItem from="1566057492063" duration="3558000" />
+      <workItem from="1566057492063" duration="6171000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101227000" />
+    <option name="totallyTimeSpent" value="103840000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19313304" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19313304" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32962137" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.18930958" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.06347439" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32628062" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4465479" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -331,25 +357,9 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/tidyapp$tidyapp.coverage" NAME="tidyapp Coverage Results" MODIFIED="1566058982079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code" />
+    <SUITE FILE_PATH="coverage/tidyapp$tidyapp.coverage" NAME="tidyapp Coverage Results" MODIFIED="1566063953046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/code/resources/register.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/templates/maidlistings.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="24" column="35" selection-end-line="33" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/resources/bnbdashboard.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -558,16 +568,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/models/maidplan.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-360">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/resources/maiddashboard.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -623,13 +623,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/models/maidplanschedule.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="58" lean-forward="true" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/templates/adminscheduleform.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
@@ -660,16 +653,6 @@
           <caret line="49" column="47" lean-forward="true" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="47" />
           <folding>
             <element signature="e#0#91#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="75" column="43" lean-forward="true" selection-start-line="75" selection-start-column="43" selection-end-line="75" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -731,8 +714,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/code/templates/scheduledashboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="60" column="32" lean-forward="true" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
+        <state relative-caret-position="456">
+          <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1800">
+          <caret line="75" column="43" lean-forward="true" selection-start-line="75" selection-start-column="43" selection-end-line="75" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="5" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/models/maidplanschedule.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="62" lean-forward="true" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/models/maidplan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/models/maidplanscheduleplan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
