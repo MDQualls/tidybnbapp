@@ -1,0 +1,25 @@
+<div class="row">
+    <div class="col">
+        <div class="card">
+            <div class="card-header">
+                <form class="schedule-filter-form" action="#" method="post">
+                    <div class="form-group schedule-filter-group ">
+                        <label for="scheduleFilterList"><h5>Schedule Filter:</h5></label>
+                        <select class="form-control-sm" name="scheduleFilterList" id="scheduleFilterList">
+                            {% for x in scheduleFilterList %}
+                                <option
+                                        {% if x == timePeriod %}
+                                            selected
+                                        {% endif %}
+                                            value="{{ x }}">{{ x }}
+                                </option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    {% include 'includes/_csrf.html' %}
+                </form>
+            </div>
+        </div>
+        <hr>
+    </div>
+</div>

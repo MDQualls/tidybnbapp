@@ -29,6 +29,7 @@ class ScheduleDashboard(Resource):
             200, self.headers
         )
 
+    @is_admin_logged_in
     def post(self):
         data = request.form
 
@@ -57,6 +58,7 @@ class CopySchedule(Resource):
     title = "Maid Schedule Dashboard"
     headers = {"Content-Type": "text/html"}
 
+    @is_admin_logged_in
     def post(self):
         data = request.form
 
