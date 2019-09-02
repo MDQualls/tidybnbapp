@@ -13,7 +13,6 @@ from resources.user.logout import Logout
 from resources.main.about import About
 from resources.main.contact import Contact
 from resources.bnb.bnblistings import BnbListings
-from resources.maidplan.maidlistings import MaidListings
 from resources.main.disclaimer import Disclaimer
 from resources.bnb.bnbdashboard import BnbDashboard
 from resources.bnb.addbnblisting import AddBnbListing
@@ -26,6 +25,7 @@ from resources.maidplan.editmaidplan import EditMaidPlan
 from resources.schedule.scheduledashboard import ScheduleDashboard, CopySchedule
 from resources.schedule.addschedule import AddSchedule
 from resources.schedule.editschedule import EditSchedule
+from resources.schedule.maidschedule import MaidSchedule
 
 app = Flask(__name__)
 app.config.from_object(Config)
@@ -69,7 +69,6 @@ api.add_resource(Logout, "/logout")
 api.add_resource(About, "/about")
 api.add_resource(Contact, "/contact")
 api.add_resource(BnbListings, "/bnblistings")
-api.add_resource(MaidListings, "/maidlistings")
 api.add_resource(Disclaimer, "/disclaimer")
 api.add_resource(BnbDashboard, "/bnbdashboard")
 api.add_resource(AddBnbListing, "/addbnblisting")
@@ -83,6 +82,7 @@ api.add_resource(ScheduleDashboard, "/scheduledashboard")
 api.add_resource(AddSchedule, "/addschedule")
 api.add_resource(EditSchedule, "/editschedule/<int:id>")
 api.add_resource(CopySchedule, "/copyschedule")
+api.add_resource(MaidSchedule, "/maidschedule")
 
 if __name__ == "__main__":
     from db import db

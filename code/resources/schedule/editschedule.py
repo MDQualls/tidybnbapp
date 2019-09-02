@@ -8,7 +8,7 @@ from datetime import datetime
 
 
 class EditSchedule(Resource):
-    title = "Edit Maid Schedule"
+    title = "Edit Maid MaidSchedule"
     headers = {"Content-Type": "text/html"}
 
     @is_admin_logged_in

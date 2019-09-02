@@ -7,13 +7,13 @@ def validate_schedule(data):
     if not in_length(data["schedule_name"], 3, 80):
         error = "Invalid schedule name.  Name must be from 3 to 80 characters."
     if not is_date(data["schedule_date"]):
-        error = "Invalid schedule date.  Schedule date must be valid datetime."
+        error = "Invalid schedule date.  MaidSchedule date must be valid datetime."
     if not is_time(data["start_time"]):
-        error = "Invalid schedule start time.  Schedule start time must be valid time."
+        error = "Invalid schedule start time.  MaidSchedule start time must be valid time."
     if not is_time(data["end_time"]):
-        error = "Invalid schedule end time.  Schedule end time must be valid time."
+        error = "Invalid schedule end time.  MaidSchedule end time must be valid time."
     if not is_int(data["post_clean_buffer"]):
-        error = "Invalid schedule post clean time.  Schedule post clean time must be valid number of minutes."
+        error = "Invalid schedule post clean time.  MaidSchedule post clean time must be valid number of minutes."
     if not verify_time_diff_positive(data["start_time"], data["end_time"]):
         error = "Invalid start and end time entry.  Start time must be before end time."
     return error

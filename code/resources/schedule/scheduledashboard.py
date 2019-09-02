@@ -10,7 +10,7 @@ from util.validators import is_date
 
 
 class ScheduleDashboard(Resource):
-    title = "Maid Schedule Dashboard"
+    title = "Maid MaidSchedule Dashboard"
     headers = {"Content-Type": "text/html"}
 
     @is_admin_logged_in
@@ -55,7 +55,7 @@ class ScheduleDashboard(Resource):
 
 
 class CopySchedule(Resource):
-    title = "Maid Schedule Dashboard"
+    title = "Maid MaidSchedule Dashboard"
     headers = {"Content-Type": "text/html"}
 
     @is_admin_logged_in
@@ -74,7 +74,7 @@ class CopySchedule(Resource):
 
         error = ""
         if not is_date(schedule_date):
-            error = "Invalid schedule date.  Schedule date must be valid datetime."
+            error = "Invalid schedule date.  MaidSchedule date must be valid datetime."
 
         if len(error) > 0:
             return make_response(
