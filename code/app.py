@@ -1,38 +1,35 @@
 from flask import Flask, make_response, render_template
 from flask_restful import Api
-import secrets
 from util.csrfprotect import csrf
 from flask_wtf.csrf import CSRFError
-from util.templatefilters import blueprint
+from util.templatefilters import templatefilters
+from config import Config
 
-from resources.home import Home
-from resources.login import Login
-from resources.register import Register
-from resources.account import Account
-from resources.logout import Logout
-from resources.about import About
-from resources.contact import Contact
-from resources.bnblistings import BnbListings
-from resources.maidlistings import MaidListings
-from resources.disclaimer import Disclaimer
-from resources.bnbdashboard import BnbDashboard
-from resources.addbnblisting import AddBnbListing
-from resources.editbnblisting import EditBnbListing
-from resources.privacypolicy import PrivacyPolicy
-from resources.bnbdetail import BnbDetail
-from resources.maiddashboard import MaidDashboard
-from resources.addmaidplan import AddMaidPlan
-from resources.editmaidplan import EditMaidPlan
-from resources.scheduledashboard import ScheduleDashboard, CopySchedule
-from resources.addschedule import AddSchedule
-from resources.editschedule import EditSchedule
+from resources.main.home import Home
+from resources.user.login import Login
+from resources.user.register import Register
+from resources.user.account import Account
+from resources.user.logout import Logout
+from resources.main.about import About
+from resources.main.contact import Contact
+from resources.bnb.bnblistings import BnbListings
+from resources.maidplan.maidlistings import MaidListings
+from resources.main.disclaimer import Disclaimer
+from resources.bnb.bnbdashboard import BnbDashboard
+from resources.bnb.addbnblisting import AddBnbListing
+from resources.bnb.editbnblisting import EditBnbListing
+from resources.main.privacypolicy import PrivacyPolicy
+from resources.bnb.bnbdetail import BnbDetail
+from resources.maidplan.maiddashboard import MaidDashboard
+from resources.maidplan.addmaidplan import AddMaidPlan
+from resources.maidplan.editmaidplan import EditMaidPlan
+from resources.schedule.scheduledashboard import ScheduleDashboard, CopySchedule
+from resources.schedule.addschedule import AddSchedule
+from resources.schedule.editschedule import EditSchedule
 
 app = Flask(__name__)
-app.register_blueprint(blueprint)
-# app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://tidyuser:\G''ymP='WMTp4VR>+2+@localhost/tidyappdb1"
-app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://root:x6xzyi@localhost/tidyappdb1"
-app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
-app.secret_key = secrets.token_urlsafe(24)
+app.config.from_object(Config)
+app.register_blueprint(templatefilters)
 
 handle_exceptions = app.handle_exception
 handle_user_exception = app.handle_user_exception

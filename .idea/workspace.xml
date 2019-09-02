@@ -2,11 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fb4253f-12bc-4396-b59d-576e67b06ba6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/code/models/maidplanscheduleplan.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/mqual.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/mqual.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/models/maidplan.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/models/maidplan.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/models/maidplanschedule.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/models/maidplanschedule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/resources/about.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/resources/main/about.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/resources/account.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/resources/user/account.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/resources/addbnblisting.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/resources/bnb/addbnblisting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/resources/addmaidplan.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/resources/maidplan/addmaidplan.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/resources/addschedule.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/resources/schedule/addschedule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/resources/bnbdashboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/resources/bnb/bnbdashboard.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/resources/bnbdetail.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/resources/bnb/bnbdetail.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/resources/bnblistings.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/resources/bnb/bnblistings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/resources/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/resources/main/contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/resources/disclaimer.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/resources/main/disclaimer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/resources/editbnblisting.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/resources/bnb/editbnblisting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/resources/editmaidplan.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/resources/maidplan/editmaidplan.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/resources/editschedule.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/resources/schedule/editschedule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/resources/home.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/resources/main/home.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/resources/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/resources/user/login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/resources/logout.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/resources/user/logout.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/resources/maiddashboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/resources/maidplan/maiddashboard.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/resources/maidlistings.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/resources/maidplan/maidlistings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/resources/privacypolicy.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/resources/main/privacypolicy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/resources/register.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/resources/user/register.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/resources/scheduledashboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/resources/schedule/scheduledashboard.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/util/templatefilters.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/util/templatefilters.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,33 +50,12 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/models/maidplan.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="e#0#17#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/code/models/maidplanscheduleplan.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1800">
-              <caret line="75" column="43" lean-forward="true" selection-start-line="75" selection-start-column="43" selection-end-line="75" selection-end-column="43" />
+            <state relative-caret-position="198">
+              <caret line="51" column="37" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
               <folding>
                 <element signature="e#0#55#0" expanded="true" />
               </folding>
@@ -64,19 +64,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/models/maidplanschedule.py">
+        <entry file="file://$PROJECT_DIR$/code/resources/user/login.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="9" column="62" lean-forward="true" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
+            <state relative-caret-position="376">
+              <caret line="52" column="27" lean-forward="true" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#83#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/db.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/code/config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="21" selection-start-column="5" selection-end-column="21" />
+            <state relative-caret-position="350">
+              <caret line="14" column="80" selection-start-line="14" selection-start-column="80" selection-end-line="14" selection-end-column="80" />
             </state>
           </provider>
         </entry>
@@ -114,7 +117,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/code/templates/maidlistings.html" />
         <option value="$PROJECT_DIR$/code/templates/disclaimer.html" />
         <option value="$PROJECT_DIR$/code/resources/disclaimer.py" />
         <option value="$PROJECT_DIR$/code/util/session.py" />
@@ -146,7 +148,6 @@
         <option value="$PROJECT_DIR$/code/resources/editschedule.py" />
         <option value="$PROJECT_DIR$/code/resources/addschedule.py" />
         <option value="$PROJECT_DIR$/code/util/validators.py" />
-        <option value="$PROJECT_DIR$/code/util/templatefilters.py" />
         <option value="$PROJECT_DIR$/code/util/dateutil.py" />
         <option value="$PROJECT_DIR$/code/static/app.css" />
         <option value="$PROJECT_DIR$/code/templates/bnblistingform.html" />
@@ -156,7 +157,6 @@
         <option value="$PROJECT_DIR$/code/resources/addbnblisting.py" />
         <option value="$PROJECT_DIR$/code/static/app.js" />
         <option value="$PROJECT_DIR$/code/templates/adminscheduleform.html" />
-        <option value="$PROJECT_DIR$/code/app.py" />
         <option value="$PROJECT_DIR$/code/templates/includes/_copyschedule.html" />
         <option value="$PROJECT_DIR$/code/resources/scheduledashboard.py" />
         <option value="$PROJECT_DIR$/code/templates/home.html" />
@@ -165,13 +165,16 @@
         <option value="$PROJECT_DIR$/code/models/maidplanschedule.py" />
         <option value="$PROJECT_DIR$/code/models/maidplanscheduleplan.py" />
         <option value="$PROJECT_DIR$/code/models/maidplan.py" />
+        <option value="$PROJECT_DIR$/code/util/templatefilters.py" />
+        <option value="$PROJECT_DIR$/code/app.py" />
+        <option value="$PROJECT_DIR$/code/config.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-461" />
-    <option name="y" value="75" />
-    <option name="width" value="1938" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -193,12 +196,6 @@
               <item name="tidyapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="tidyapp" type="462c0819:PsiDirectoryNode" />
               <item name="code" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tidyapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tidyapp" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -225,7 +222,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\ProductionVersion\tidyapp\code" />
+      <recent name="E:\ProductionVersion\tidyapp\code\resources\schedule" />
+      <recent name="E:\ProductionVersion\tidyapp\code\resources\user" />
+      <recent name="E:\ProductionVersion\tidyapp\code\resources\maidplan" />
+      <recent name="E:\ProductionVersion\tidyapp\code\resources\bnb" />
+      <recent name="E:\ProductionVersion\tidyapp\code\resources\main" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -285,29 +286,42 @@
       <workItem from="1565451610069" duration="12437000" />
       <workItem from="1565533886302" duration="6839000" />
       <workItem from="1565547806682" duration="12514000" />
-      <workItem from="1566057492063" duration="6171000" />
+      <workItem from="1566057492063" duration="6876000" />
+      <workItem from="1566138137745" duration="56000" />
+      <workItem from="1566744765006" duration="932000" />
+      <workItem from="1567441704967" duration="1964000" />
+      <workItem from="1567444133246" duration="345000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103840000" />
+    <option name="totallyTimeSpent" value="107842000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19313304" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19635193" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32962137" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32628062" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4465479" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.12249443" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.042316258" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32962137" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.2026726" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.24498886" />
@@ -327,16 +341,11 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/code/util/validators.py</url>
-          <line>61</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/util/validators.py</url>
           <line>50</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/resources/scheduledashboard.py</url>
+          <url>file://$PROJECT_DIR$/code/resources/schedule/scheduledashboard.py</url>
           <line>61</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
@@ -357,61 +366,10 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/tidyapp$tidyapp.coverage" NAME="tidyapp Coverage Results" MODIFIED="1566063953046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code" />
+    <SUITE FILE_PATH="coverage/tidyapp$tidyapp.coverage" NAME="tidyapp Coverage Results" MODIFIED="1567444381153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/code/resources/bnbdashboard.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/2106936537/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="896" column="6" selection-start-line="896" selection-start-column="6" selection-end-line="896" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/templates/includes/_navbar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="40" column="80" lean-forward="true" selection-start-line="40" selection-start-column="80" selection-end-line="40" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/resources/bnbdetail.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/resources/bnblistings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/resources/source.py" />
-    <entry file="file://$PROJECT_DIR$/code/models/bnb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="39" lean-forward="true" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/2106936537/_datetime.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="79">
@@ -426,7 +384,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/resources/editbnblisting.py">
+    <entry file="file://$PROJECT_DIR$/code/resources/bnb/editbnblisting.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="17" column="64" lean-forward="true" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
@@ -436,7 +394,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/resources/about.py">
+    <entry file="file://$PROJECT_DIR$/code/resources/main/about.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
@@ -445,7 +403,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/resources/addmaidplan.py">
+    <entry file="file://$PROJECT_DIR$/code/resources/maidplan/addmaidplan.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-408">
           <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
@@ -455,7 +413,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/resources/account.py">
+    <entry file="file://$PROJECT_DIR$/code/resources/user/account.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="12" column="34" lean-forward="true" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
@@ -493,22 +451,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/resources/editmaidplan.py">
+    <entry file="file://$PROJECT_DIR$/code/resources/maidplan/editmaidplan.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
           <caret line="33" column="86" lean-forward="true" selection-start-line="33" selection-start-column="73" selection-end-line="33" selection-end-column="86" />
           <folding>
             <element signature="e#0#91#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/util/validators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1656">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -520,30 +468,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/util/templatefilters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/datetime.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2008">
           <caret line="923" column="11" lean-forward="true" selection-start-line="923" selection-start-column="11" selection-end-line="923" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/util/session.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -568,7 +496,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/resources/maiddashboard.py">
+    <entry file="file://$PROJECT_DIR$/code/resources/maidplan/maiddashboard.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
@@ -599,7 +527,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/resources/addbnblisting.py">
+    <entry file="file://$PROJECT_DIR$/code/resources/bnb/addbnblisting.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="864">
           <caret line="40" column="20" lean-forward="true" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
@@ -647,7 +575,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/resources/addschedule.py">
+    <entry file="file://$PROJECT_DIR$/code/resources/schedule/addschedule.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="428">
           <caret line="49" column="47" lean-forward="true" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="47" />
@@ -671,7 +599,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/resources/editschedule.py">
+    <entry file="file://$PROJECT_DIR$/code/resources/schedule/editschedule.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="48" column="57" lean-forward="true" selection-start-line="46" selection-start-column="8" selection-end-line="48" selection-end-column="57" />
@@ -695,7 +623,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/resources/scheduledashboard.py">
+    <entry file="file://$PROJECT_DIR$/code/resources/schedule/scheduledashboard.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1344">
           <caret line="71" column="40" lean-forward="true" selection-start-line="71" selection-start-column="40" selection-end-line="71" selection-end-column="40" />
@@ -719,44 +647,117 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/app.py">
+    <entry file="file://$PROJECT_DIR$/code/db.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1800">
-          <caret line="75" column="43" lean-forward="true" selection-start-line="75" selection-start-column="43" selection-end-line="75" selection-end-column="43" />
+        <state relative-caret-position="72">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/tidyapp/Lib/site-packages/flask_sqlalchemy/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/util/validators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
-            <element signature="e#0#55#0" expanded="true" />
+            <element signature="e#0#42#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/db.py">
+    <entry file="file://$PROJECT_DIR$/code/util/templatefilters.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" selection-start-column="5" selection-end-column="21" />
+        <state relative-caret-position="200">
+          <caret line="8" column="48" lean-forward="true" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/models/maidplanschedule.py">
+    <entry file="file://$PROJECT_DIR$/code/util/security.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="62" lean-forward="true" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
+        <state relative-caret-position="-135">
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/util/session.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="29" column="57" lean-forward="true" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/models/bnb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="39" lean-forward="true" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/code/models/maidplan.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="400">
+          <caret line="16" column="103" selection-start-line="16" selection-start-column="94" selection-end-line="16" selection-end-column="103" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/code/models/maidplanschedule.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/code/models/maidplanscheduleplan.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="275">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/models/user.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="51" column="37" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/resources/user/login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="52" column="27" lean-forward="true" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#83#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="80" selection-start-line="14" selection-start-column="80" selection-end-line="14" selection-end-column="80" />
         </state>
       </provider>
     </entry>
