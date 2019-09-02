@@ -11,7 +11,7 @@ class MaidPlanSchedule(db.Model):
     end_time = db.Column(db.Time, nullable=False, default=0)
     post_clean_buffer = db.Column(db.Integer, nullable=False, default=0)
 
-    plan = db.relationship('MaidPlanModel', secondary="maidplanscheduleplan", backref='maidplanschedule',
+    plans = db.relationship('MaidPlanModel', secondary="maidplanscheduleplan", backref='maidplanschedule',
                            lazy='dynamic')
 
     def __init__(self, schedule_name, schedule_date, start_time, end_time, post_clean_buffer):

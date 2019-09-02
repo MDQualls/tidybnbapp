@@ -2,33 +2,43 @@
 
 {% block content %}
 
-<div id="about_page" class="card mt-2">
-    <div class="card-body">
-        <div class="row">
-            <div class="col-md-4">                
+    <div id="about_page" class="card mt-2">
+        <div class="card-body">
+            <div class="row">
                 <div class="col">
-                    <img src="https://via.placeholder.com/400x400" alt="placeholder" class="img-thumbnail">            
-                </div>
-                <div class="col mt-2">
-                    <img src="https://via.placeholder.com/400x400" alt="placeholder" class="img-thumbnail">            
+                    <div class="col">
+                        <h3 class="card-title">{{ current_month_year }} {{ title }}</h3>
+                        <hr>
+                        <p class="lead">Below is listed the available cleaning times for {{ current_month_year }}. </p>
+                    </div>
+                    <div class="col">
+                        {% for item in schedule %}
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0 text-info">
+                                        {{ item.schedule_name }} for {{ item.schedule_date.strftime("%m/%d/%Y") }}
+                                    </h5>
+                                </div>
+
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                     data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <p class="lead">{{ item.start_time.strftime("%I:%M %p") }}
+                                            to {{ item.end_time.strftime("%I:%M %p") }}</p>
+                                        <ul>
+                                            {% for plan in item.plans %}
+                                                <li>{{ plan }}</li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
                 </div>
             </div>
-            <div class="col-md-8">
-                <div class="col text-center">
-                    <h3 class="card-title">{{ title }} Page</h3>
-                </div>                
-                <div class="col">
-                    <p class="card-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <p class="card-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>                
-            </div>
-        </div>        
+        </div>
     </div>
-</div>
-    
+
 
 {% endblock %}
